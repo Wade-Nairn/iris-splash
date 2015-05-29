@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IRIS Online</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <script src="jquery/jquery-2.1.4.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+   body {
+     padding-top: 110px;
+     padding-bottom: 40px;
+   }
+
+   .infobox {
+     height: 50em;
+     border-bottom: solid 1px #DDDDDD;
+   }
+
+   .navbar-header .navbar-brand {
+     padding-top: 22px;
+   }
+
+   .navbar-brand .brand {
+     font-size: 20px;
+   }
+
+   .navbar-brand .brand-summary {
+     font-size: 14px;
+   }
+
+   .navbar img {
+     margin: 15px 15px 15px 0;
+     padding: 0;
+     height: 50px;
+   }
+
+   .nav-links {
+     font-size: 12px;
+     border-top: solid 1px #DDDDDD;
+     background-color: #f8f8f8;
+     color: black;
+     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+     margin-left: -15px;
+   }
+
+   .nav-links .navbar-nav li a {
+     color: black;
+     padding-top: 7px;
+     padding-bottom: 7px;
+   }
+
+   .nav-links .active a {
+     font-weight: bold;
+   }
+
+   /* Fix links with anchors hiding under fixed header */
+   *[id]:before {
+     display: block;
+     content: " ";
+     margin-top: -110px;
+     height: 110px;
+     visibility: hidden;
+   }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#navlinks" data-offset="180"">
+<nav class="navbar navbar-fixed-top">
+ <div class="container-fluid navbar-default ">
+   <a href="index.html" class="pull-left"><img src="img/IRIS_NEW.png"/></a>
+
+   <div class="navbar-header">
+     <a class="navbar-brand" href="index.html">
+       <div class="brand">IRIS Online</div>
+       <div class="brand-summary">South Australian Country Fire Service</div>
+     </a>
+   </div>
+   <div>
+     <ul class="nav navbar-nav navbar-right">
+       <li><a href="#">Training Site</a></li>
+     </ul>
+   </div>
+ </div>
+ <div id="navlinks" class="container-fluid nav-links">
+   <ul class="nav navbar-nav">
+     <li>
+       <a href="#overview" style="min-width: 110px">
+        Shift Planning
+       </a>
+     </li>
+     <li>
+       <a href="#manuals" style="min-width: 85px">
+         Manuals
+       </a>
+     </li>
+     <li>
+       <a href="#training">
+         Training Materials
+       </a>
+     </li>
+   </ul>
+   <ul class="nav navbar-nav navbar-right">
+     <li class="dropdown">
+       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Applications <span class="caret"></span></a>
+       <ul class="dropdown-menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="coordination.html">Resource Coordination</a></li>
+         <li><a href="sharp.html">Shift Planning</a></li>
+         <li><a href="availability.html">Availability</a></li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+</nav>
+
+<div class="container-fluid">
+  <div>
+    <div id="overview">
+      <div class="well well-lg infobox">
+        <h2>
+          Desktop Client
+        </h2>
+
+        <p>
+          IRIS Coordination is a desktop application that you must install once per computer, after which you can just
+          run it from the Windows Start Menu.
+        </p>
+
+        <p>
+          <a href="download/iris-client-install.pdf" class="btn btn-info btn-large btn-block"><i class="icon-download-alt icon-white"></i>
+            Installation Instructions</a>
+        </p>
+
+        <p>
+          <a href="download/iris-client-<%= node['iris']['version'] %>.exe" class="btn btn-info btn-large btn-block"><i class="glyphicon glyphicon-download"></i>
+            Download Windows Installer</a>
+          <a href="download/iris-client-<%= node['iris']['version'] %>.zip" class="btn btn-info btn-large btn-block"><i class="glyphicon glyphicon-download"></i>
+            Download Zip Distribution</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="manuals">
+      <div class="well well-lg infobox">
+        <h2>
+          Manuals
+        </h2>
+
+        <p>
+          -
+        </p>
+      </div>
+    </div>
+
+    <div id="training">
+      <div class="well well-lg infobox">
+        <h2>
+          Training materials
+        </h2>
+
+        <p>
+          -
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.main {
+  margin-top:@navbar-height + @grid-gutter-width;
+
+  &:extend(.container all);
+  //background-color: fade(@navbar-inverse-color, 10%);
+  padding-top:@grid-gutter-width;
+  padding-bottom:@grid-gutter-width;
+}
+
+.main-item {
+  .make-md-column(4, @grid-gutter-width);
+  margin-bottom: @grid-gutter-width;
+
+  &:nth-child(3n+1) {
+    clear: left;
+  }
+}
+
+.main-item--content {
+  &:extend(.clearfix all);
+
+  color: @brand-inverse;
+  padding: @grid-gutter-width;
+  border:1px solid fade(@navbar-inverse-color, 20%);
+  box-shadow: 0 0 5px fade(@navbar-inverse-color, 10%);
+  background-color: @dropdown-bg;
+
+  .btn:first-child {
+    .pull-right();
+  }
+
+  .btn-link:nth-child(2),
+  .btn-secondary:nth-child(2) {
+    padding-left: 0;
+
+    &:after {
+      left: 0;
+    }
+  }
+}

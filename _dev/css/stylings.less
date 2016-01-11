@@ -1,0 +1,68 @@
+// Directories
+@dir-imports: "_imports";
+@dir-modules: "../../node_modules";
+@dir-bootstrap: "@{dir-modules}/bootstrap/less";
+@dir-font-awesome: "@{dir-modules}/font-awesome/less";
+@dir-semantic-ui: "@{dir-modules}/semantic-ui-less";
+
+// Core variables and mixins
+@import "@{dir-bootstrap}/variables";
+@import "@{dir-bootstrap}/mixins";
+@import "@{dir-imports}/variables";
+
+// Reset and dependencies
+@import "@{dir-bootstrap}/normalize";
+@import "@{dir-bootstrap}/print";
+@import (reference) "@{dir-bootstrap}/glyphicons";
+@import (reference) "@{dir-font-awesome}/font-awesome";
+
+// Core CSS
+@import "@{dir-bootstrap}/scaffolding";
+@import "@{dir-bootstrap}/type";
+@import (reference) "@{dir-bootstrap}/code";
+@import "@{dir-bootstrap}/grid";
+@import (reference) "@{dir-bootstrap}/tables";
+@import (reference) "@{dir-bootstrap}/forms";
+@import "@{dir-bootstrap}/buttons";
+
+// Components
+@import (reference) "@{dir-bootstrap}/component-animations";
+@import (reference) "@{dir-bootstrap}/dropdowns";
+@import (reference) "@{dir-bootstrap}/button-groups";
+@import (reference) "@{dir-bootstrap}/input-groups";
+@import (reference) "@{dir-bootstrap}/navs";
+@import (reference) "@{dir-bootstrap}/navbar";
+@import (reference) "@{dir-bootstrap}/breadcrumbs";
+@import (reference) "@{dir-bootstrap}/pagination";
+@import (reference) "@{dir-bootstrap}/pager";
+@import (reference) "@{dir-bootstrap}/labels";
+@import (reference) "@{dir-bootstrap}/badges";
+@import "@{dir-bootstrap}/jumbotron";
+@import (reference) "@{dir-bootstrap}/thumbnails";
+@import (reference) "@{dir-bootstrap}/alerts";
+@import (reference) "@{dir-bootstrap}/progress-bars";
+@import (reference) "@{dir-bootstrap}/media";
+@import (reference) "@{dir-bootstrap}/list-group";
+@import "@{dir-bootstrap}/panels";
+@import (reference) "@{dir-bootstrap}/responsive-embed";
+@import "@{dir-bootstrap}/wells";
+@import (reference) "@{dir-bootstrap}/close";
+
+// Components w/ JavaScript
+@import (reference) "@{dir-bootstrap}/modals";
+@import (reference) "@{dir-bootstrap}/tooltip";
+@import (reference) "@{dir-bootstrap}/popovers";
+@import (reference) "@{dir-bootstrap}/carousel";
+
+// Utility classes
+@import (reference) "@{dir-bootstrap}/utilities";
+@import (reference) "@{dir-bootstrap}/responsive-utilities";
+
+@import "@{dir-imports}/layout/header";
+@import "@{dir-imports}/layout/main";
+@import "@{dir-imports}/layout/navigation-footer";
+@import "@{dir-imports}/layout/navigation-menu";
+@import "@{dir-imports}/layout/section";
+
+// IRIS
+@import "@{dir-imports}/common";

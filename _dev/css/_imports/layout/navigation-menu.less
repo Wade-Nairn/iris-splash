@@ -1,0 +1,16 @@
+.navigation-menu {
+  .make-md-column(3);
+  margin-top: @grid-gutter-width / 2;
+}
+
+.navigation-menu--list {
+  &:extend(.nav all);
+  &:extend(.main-item--content all);
+  padding: 0;
+}
+
+@media (min-width: @screen-md-min) {
+  .navigation-menu--list.affix {
+    position: fixed;
+  }
+}

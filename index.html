@@ -4,74 +4,80 @@
   <title>IRIS Online</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="css/splash.css" rel="stylesheet">
-
-  <style type="text/css">
-    body {
-      padding-top: 60px;
-      padding-bottom: 40px;
-    }
-  </style>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,100italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="css/stylings.css" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
-    <div class="jumbotron">
-      <div class="row">
-        <h1 class="col-md-3">
-          <img src="img/IRIS_NEW.png"/>
-        </h1>
-        <span class="col-md-9" style="vertical-align: middle">
-          <h1>
-            IRIS
-          </h1>
-          <h3>%ORGANISATION_LONG_NAME%</h3>
-          <p>%SITE_DESCRIPTION%</p>
-        </span>
+<header class="header">
+  <h2 class="header--brand">
+    <img class="header--brand-logo" src="img/logo-iris-inverse.png" alt="IRIS"/>
+    <span class="header--brand-title">
+      IRIS Online
+    </span>
+  </h2>
+
+  <h1 class="header--title">
+    %ORGANISATION_LONG_NAME%
+  </h1>
+
+  <h2 class="header--description">
+    %SITE_DESCRIPTION%
+  </h2>
+</header>
+
+<main class="main">
+  <article class="main-item">
+    <div class="main-item--content">
+      <h3>
+        Availability
+      </h3>
+
+      <p>
+        Manage rosters, availability and fatigue, before and after emergencies
+      </p>
+
+      <div class="main-item--actions">
+        <a href="%URL_ACAL%" class="btn btn-primary">Launch</a>
+        <a href="acal.html" class="btn btn-secondary">Guides & Resources</a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="well well-lg card">
-          <h2>
-            Availability
-          </h2>
+  </article>
 
-          <p>
-            Manage rosters, availability and fatigue, before and after emergencies
-          </p>
-          <a href="%URL_ACAL%" class="btn btn-info btn-large">Launch</a>
-          <a href="acal.html" class="btn btn-info btn-large">Guides & Resources</a>
-        </div>
+  <article class="main-item">
+    <div class="main-item--content">
+      <h3>
+        Shift Planning
+      </h3>
+
+      <p>
+        Plan and execute shift plans for going emergencies
+      </p>
+
+      <div class="main-item--actions">
+        <a href="%URL_SHARP%" class="btn btn-primary">Launch</a>
+        <a href="sharp.html" class="btn btn-secondary">Guides & Resources</a>
       </div>
-      <div class="col-md-4">
-        <div class="well well-lg card">
-          <h2>
-            Shift Planning
-          </h2>
-
-          <p>
-            Plan and execute shift plans for going emergencies
-          </p>
-          <a href="%URL_SHARP%" class="btn btn-info btn-large">Launch</a>
-          <a href="sharp.html" class="btn btn-info btn-large">Guides & Resources</a>
-        </div>
-      </div>  
-      <div class="col-md-4">
-        <div class="well well-lg card">
-          <h2>
-            Coordination
-          </h2>
-
-          <p>
-            Dispatch and coordinate resources under emergency conditions
-          </p>
-          <a href="coordination.html" class="btn btn-info btn-large">Guides & Resources</a>	
-        </div>
-      </div>      
     </div>
-  </div>
+  </article>
+
+  <article class="main-item">
+    <div class="main-item--content">
+      <h3>
+        Coordination
+      </h3>
+
+      <p>
+        Dispatch and coordinate resources under emergency conditions
+      </p>
+
+      <div class="main-item--actions">
+        <a href="coordination.html" class="btn btn-secondary">Guides & Resources</a>
+      </div>
+    </div>
+  </article>
+</main>
+
+<script src="js/iris.js"></script>
 </body>
 </html>

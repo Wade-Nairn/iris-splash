@@ -1,129 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IRIS Online</title>
+  <title>Availability - IRIS Online</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="css/splash.css" rel="stylesheet">
-  <script src="jquery/jquery-2.1.4.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,100italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="css/stylings.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#navlinks" data-offset="180"">
-  <nav class="navbar navbar-fixed-top">
-   <div class="container-fluid navbar-default ">
-     <a href="index.html" class="pull-left"><img src="img/IRIS_NEW.png"/></a>
+<body data-spy="scroll" data-target="#NavigationMenu" data-offset="150">
 
-     <div class="navbar-header">
-       <a class="navbar-brand" href="index.html">
-         <div class="brand">IRIS Online</div>
-         <div class="brand-summary">%ORGANISATION_LONG_NAME%</div>
-       </a>
-     </div>
-     <div>
-       <ul class="nav navbar-nav navbar-right">
-         <li><a href="#">%SITE_DESCRIPTION%</a></li>
-       </ul>
-     </div>
-   </div>
-   <div id="navlinks" class="container-fluid nav-links">
-     <ul class="nav navbar-nav">
-       <li>
-         <a href="#overview" style="min-width: 110px">
+<header class="header">
+  <h2 class="header--brand">
+    <img class="header--brand-logo" src="img/logo-iris-inverse.png" alt="IRIS"/>
+    <span class="header--brand-title">
+      IRIS Online
+    </span>
+  </h2>
+
+  <h1 class="header--title">
+    <a href="index.html">%ORGANISATION_LONG_NAME%</a>
+  </h1>
+
+  <h2 class="header--description">
+    %SITE_DESCRIPTION%
+  </h2>
+</header>
+
+<main class="main">
+  <nav id="NavigationMenu" class="navigation-menu">
+    <ul class="nav navigation-menu--list" data-spy="affix">
+      <li class="navigation-menu--list--item">
+        <a href="#overview">
           Availability Calendar Overview
         </a>
       </li>
-      <li>
-       <a href="#manuals" style="min-width: 85px">
-         Manuals
-       </a>
-     </li>
-     <li>
-       <a href="#training">
-         Training Materials
-       </a>
-     </li>
-   </ul>
-   <ul class="nav navbar-nav navbar-right">
-     <li class="dropdown">
-       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Applications <span class="caret"></span></a>
-       <ul class="dropdown-menu">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="coordination.html">Resource Coordination</a></li>
-         <li><a href="sharp.html">Shift Planning</a></li>
-         <li><a href="availability.html">Availability</a></li>
-       </ul>
-     </li>
-   </ul>
- </div>
+      <li class="navigation-menu--list--item">
+        <a href="#manuals">
+          Manuals
+        </a>
+      </li>
+      <li class="navigation-menu--list--item">
+        <a href="#training">
+          Training Materials
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="section-holder">
+    <section class="section" id="overview">
+      <h2>
+        Overview
+      </h2>
+
+      <p>
+      <h4>Background</h4>
+      The Availability Calendar (aCal) is an interim tool to manage
+      NEO employees’ availability during the planning for, and
+      response to, emergencies.
+      <h4>Who Can Use aCal?</h4>
+      aCal can be used by any registered FireWeb user: with an
+      emergency role; who is a manager; who is a Duty Officer; or
+      who is a Resources Officer.
+      <h4>Why Use aCal?</h4>
+      aCal allows visibility of personnel across the Department and
+      has many uses, including:
+      <ul>
+        <li>individuals flagging their heightened availability, or unavailability;</li>
+        <li>supporting the development of rosters and shift plans;</li>
+        <li>searching for available staff with particular roles;</li>
+        <li>identifying ‘business critical’ staff;</li>
+        <li>managers viewing their direct reports’ availability;</li>
+        <li>reporting functions.</li>
+      </ul>
+      <h4>What Does ‘Availability’ Mean?</h4>
+      Being available means you are not: on leave; taking
+      time-in- lieu; deployed; on rest days associated with
+      deployments.
+      </p>
+
+      <p>
+        <a href="%URL_ACAL%" class="btn btn-primary btn-large">Launch</a>
+      </p>
+    </section>
+
+    <section class="section" id="manuals">
+      <h2>
+        Manuals
+      </h2>
+
+      <p>
+        <a href="http://fireweb.dse.vic.gov.au/documents/aCalFactSheet_20141217.pdf">Fact Sheet</a>
+        <br/>
+        <a href="http://fireweb.dse.vic.gov.au/documents/acal-HowToViewGroupAvailabilityData.pdf">
+          How to view group availability data
+        </a>
+      </p>
+    </section>
+
+    <section class="section" id="training">
+      <h2>
+        Training materials
+      </h2>
+
+      <p>
+        -
+      </p>
+    </section>
+  </div>
+</main>
+
+<nav class="navigation-footer">
+  <a class="navigation-footer--title" data-toggle="dropdown" href="#">
+    <span class="navigation-footer--title-label">Applications</span>
+    <span class="navigation-footer--title-icon">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+  </a>
+  <ul class="navigation-footer--list">
+    <li class="navigation-footer--list-item"><a href="index.html">Home</a></li>
+    <li class="navigation-footer--list-item"><a href="coordination.html">Resource Coordination</a></li>
+    <li class="navigation-footer--list-item"><a href="sharp.html">Shift Planning</a></li>
+    <li class="navigation-footer--list-item"><a href="acal.html">Availability</a></li>
+  </ul>
 </nav>
 
-<div class="container-fluid">
-  <div>
-    <div id="overview">
-      <div class="well well-lg infobox">
-        <h2>
-          Overview
-        </h2>
-
-        <p>
-          <h4>Background</h4>
-          The Availability Calendar (aCal) is an interim tool to manage
-          NEO employees’ availability during the planning for, and
-          response to, emergencies.
-          <h4>Who Can Use aCal?</h4>
-          aCal can be used by any registered FireWeb user: with an
-          emergency role; who is a manager; who is a Duty Officer; or
-          who is a Resources Officer.
-          <h4>Why Use aCal?</h4>
-          aCal allows visibility of personnel across the Department and
-          has many uses, including:
-          <ul>
-            <li>individuals flagging their heightened availability, or unavailability;</li>
-            <li>supporting the development of rosters and shift plans;</li>
-            <li>searching for available staff with particular roles;</li>
-            <li>identifying ‘business critical’ staff;</li>
-            <li>managers viewing their direct reports’ availability;</li>
-            <li>reporting functions.</li>
-          </ul>
-          <h4>What Does ‘Availability’ Mean?</h4>
-          Being available means you are not: on leave; taking
-          time-in- lieu; deployed; on rest days associated with
-          deployments.
-        </p>
-
-        <p>
-          <a href="%URL_ACAL%" class="btn btn-info btn-large">Launch</a>
-        </p>
-      </div>
-
-      <div id="manuals">
-        <div class="well well-lg infobox">
-          <h2>
-            Manuals
-          </h2>
-
-          <p>
-            <a href="http://fireweb.dse.vic.gov.au/documents/aCalFactSheet_20141217.pdf">Fact Sheet</a>
-            <br />
-            <a href="http://fireweb.dse.vic.gov.au/documents/acal-HowToViewGroupAvailabilityData.pdf">How to view group availability data</a>            
-          </p>
-        </div>
-      </div>
-
-      <div id="training">
-        <div class="well well-lg infobox">
-          <h2>
-            Training materials
-          </h2>
-
-          <p>
-            -
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script src="js/iris.js"></script>
 </body>
 </html>

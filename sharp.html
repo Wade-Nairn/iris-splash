@@ -1,130 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IRIS Online</title>
+  <title>Shift Planning - IRIS Online</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="css/splash.css" rel="stylesheet">
-  <script src="jquery/jquery-2.1.4.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,100italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="css/stylings.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#navlinks" data-offset="180"">
-  <nav class="navbar navbar-fixed-top">
-   <div class="container-fluid navbar-default ">
-     <a href="index.html" class="pull-left"><img src="img/IRIS_NEW.png"/></a>
 
-     <div class="navbar-header">
-       <a class="navbar-brand" href="index.html">
-         <div class="brand">IRIS Online</div>
-         <div class="brand-summary">%ORGANISATION_LONG_NAME%</div>
-       </a>
-     </div>
-     <div>
-       <ul class="nav navbar-nav navbar-right">
-         <li><a href="#">%SITE_DESCRIPTION%</a></li>
-       </ul>
-     </div>
-   </div>
-   <div id="navlinks" class="container-fluid nav-links">
-     <ul class="nav navbar-nav">
-       <li>
-         <a href="#overview" style="min-width: 110px">
-          Shift Planning Overview
+<header class="header">
+  <h2 class="header--brand">
+    <img class="header--brand-logo" src="img/logo-iris-inverse.png" alt="IRIS"/>
+    <span class="header--brand-title">
+      IRIS Online
+    </span>
+  </h2>
+
+  <h1 class="header--title">
+    <a href="index.html">%ORGANISATION_LONG_NAME%</a>
+  </h1>
+
+  <h2 class="header--description">
+    %SITE_DESCRIPTION%
+  </h2>
+</header>
+
+<main class="main">
+  <nav id="NavigationMenu" class="navigation-menu">
+    <ul class="nav navigation-menu--list" data-spy="affix">
+      <li class="navigation-menu--list--item">
+        <a href="#overview">
+          Availability Calendar Overview
         </a>
       </li>
-      <li>
-       <a href="#manuals" style="min-width: 85px">
-         Manuals
-       </a>
-     </li>
-     <li>
-       <a href="#training">
-         Training Materials
-       </a>
-     </li>
-   </ul>
-   <ul class="nav navbar-nav navbar-right">
-     <li class="dropdown">
-       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Applications <span class="caret"></span></a>
-       <ul class="dropdown-menu">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="coordination.html">Resource Coordination</a></li>
-         <li><a href="sharp.html">Shift Planning</a></li>
-         <li><a href="availability.html">Availability</a></li>
-       </ul>
-     </li>
-   </ul>
- </div>
+      <li class="navigation-menu--list--item">
+        <a href="#manuals">
+          Manuals
+        </a>
+      </li>
+      <li class="navigation-menu--list--item">
+        <a href="#training">
+          Training Materials
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="section-holder">
+    <section class="section" id="overview">
+      <h2>
+        Overview
+      </h2>
+
+      <p>
+        The IRIS Shift and Resource Planner (ShaRP) is a web application developed, largely, for NSW Parks and
+        Wildlife.
+        <br/>
+        It closely integrates with IRIS and provides for Tour Of Duty management and interaction with Resource
+        Requesting.
+        <br/>
+        It is a version 1 product and will require additional enhancement in the future, but is a good fit for DELWP's
+        business.
+      </p>
+
+      <p>
+        ShaRP has been demonstrated to regional DELWP staff and has received overwhelming interest and support.
+      </p>
+      <h4>Benefits</h4>
+
+      <p>Provides a quick road into:</p>
+      <ul>
+        <li>Shift planning and shift change at an incident</li>
+        <li>Tour of Duty rotation planning</li>
+        <li>Standby rosters, and</li>
+        <li>Burn Operations planning.</li>
+      </ul>
+
+      <p>Opens the door to future adoption of, and system support for:</p>
+      <ul>
+        <li>Resource estimation for Prescribed Burning</li>
+        <li>Standby, and other short, medium and long roster management</li>
+        <li>Integrated Resource Requesting - linking ShaRP to SRRS and IRIS Coordination</li>
+        <li>Processes for capture of 'pre-incident' work</li>
+        <li>Reduction of the usage of IRIS for non-real-time data capture - Stop recording Standby in IRIS
+            Coordination
+        </li>
+        <li>Production of Incident Action Plans and Deployment orders, and</li>
+        <li>Forward looking Availability view</li>
+      </ul>
+      <p>
+        <a href="%URL_SHARP%" class="btn btn-primary btn-large">Launch</a>
+      </p>
+    </section>
+
+    <section class="section" id="manuals">
+      <h2>
+        Manuals
+      </h2>
+
+      <p>
+        <a href="doc/sharp/Sharp_UserGuide.pdf">User Guide</a>
+      </p>
+      </p>
+    </section>
+
+    <section class="section" id="training">
+      <h2>
+        Training materials
+      </h2>
+
+      <p>
+        -
+      </p>
+    </section>
+  </div>
+</main>
+
+<nav class="navigation-footer">
+  <a class="navigation-footer--title" data-toggle="dropdown" href="#">
+    <span class="navigation-footer--title-label">Applications</span>
+    <span class="navigation-footer--title-icon">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+  </a>
+  <ul class="navigation-footer--list">
+    <li class="navigation-footer--list-item"><a href="index.html">Home</a></li>
+    <li class="navigation-footer--list-item"><a href="coordination.html">Resource Coordination</a></li>
+    <li class="navigation-footer--list-item"><a href="sharp.html">Shift Planning</a></li>
+    <li class="navigation-footer--list-item"><a href="acal.html">Availability</a></li>
+  </ul>
 </nav>
 
-<div class="container-fluid">
-  <div>
-    <div id="overview">
-      <div class="well well-lg infobox">
-        <h2>
-          Overview
-        </h2>
-        <p>
-          The IRIS Shift and Resource Planner (ShaRP) is a web application developed, largely, for NSW Parks and Wildlife.
-          <br /> 
-          It closely integrates with IRIS and provides for Tour Of Duty management and interaction with Resource Requesting. 
-          <br /> 
-          It is a version 1 product and will require additional enhancement in the future, but is a good fit for DELWP's business.
-        </p>
-        <p>
-          ShaRP has been demonstrated to regional DELWP staff and has received overwhelming interest and support.
-        </p>
-        <h4>Benefits</h4>
-
-        <p>Provides a quick road into:</p>
-        <ul>
-          <li>Shift planning and shift change at an incident</li>
-          <li>Tour of Duty rotation planning</li>
-          <li>Standby rosters, and</li>
-          <li>Burn Operations planning.</li>
-        </ul>
-
-        <p>Opens the door to future adoption of, and system support for:</p>
-        <ul>
-          <li>Resource estimation for Prescribed Burning</li>
-          <li>Standby, and other short, medium and long roster management</li>
-          <li>Integrated Resource Requesting - linking ShaRP to SRRS and IRIS Coordination</li>
-          <li>Processes for capture of 'pre-incident' work</li>
-          <li>Reduction of the usage of IRIS for non-real-time data capture - Stop recording Standby in IRIS Coordination</li>
-          <li>Production of Incident Action Plans and Deployment orders, and</li>
-          <li>Forward looking Availability view</li>
-        </ul>
-        <p>
-        <a href="%URL_SHARP%" class="btn btn-info btn-large">Launch</a>
-        </p>
-      </div>
-
-      <div id="manuals">
-        <div class="well well-lg infobox">
-          <h2>
-            Manuals
-          </h2>
-
-          <p>
-            <a href="doc/sharp/Sharp_UserGuide.pdf">User Guide</a>
-          </p>
-        </div>
-      </div>
-
-      <div id="training">
-        <div class="well well-lg infobox">
-          <h2>
-            Training materials
-          </h2>
-
-          <p>
-            -
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<script src="js/iris.js"></script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+{
+  "server": {
+    "server": {
+      "baseDir": "."
+    },
+    "port": 3050
+  },
+  "css": [
+    {
+      "src": [
+        "_dev/css/**/*",
+        "!_dev/css/_*",
+        "!_dev/css/_*/**/*"
+      ],
+      "watch": [
+        "_dev/css/**/*"
+      ],
+      "dest": "css",
+      "uncss": {
+        "html": [
+          "*.html"
+        ]
+      }
+    }
+  ],
+  "js": [
+    {
+      "src": [
+        "_dev/js/**/*",
+        "!_dev/js/_*",
+        "!_dev/js/_*/**/*"
+      ],
+      "watch": [
+        "_dev/js/**/*"
+      ],
+      "dest": "js",
+      "browserify": true
+    }
+  ],
+  "images": [
+    {
+      "src": [
+        "_dev/images/**/*",
+        "!_dev/images/_*",
+        "!_dev/images/_*/**/*"
+      ],
+      "dest": "img"
+    }
+  ],
+  "refresh": [
+    "*.html"
+  ]
+}

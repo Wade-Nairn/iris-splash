@@ -1,0 +1,126 @@
+body {
+  background:  @body-bg linear-gradient(0deg, transparent 0%, lighten(@body-bg, 10%) 100%) no-repeat;
+  font-weight: 300;
+  position: relative;
+}
+
+h3, .h3 {
+  font-weight: 100;
+}
+
+.btn:not(.btn-link):not(.btn-secondary) {
+  position: relative;
+  //overflow: hidden;
+
+  &:after {
+    content:          '';
+    position:         absolute;
+    top:              0;
+    left:             0;
+    right:            0;
+    bottom:           0;
+    background-color: fade(@text-color, 10%);
+    transition:       transform .2s linear, opacity .2s linear;
+    transform:        scale3d(2, 2, 1);
+    opacity:          0;
+    border-radius:    @btn-border-radius-large;
+    border:           0;
+    transform-origin: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px fade(@text-color, 50%);
+
+    &:after {
+      transform: none;
+      opacity:   1;
+    }
+  }
+}
+
+a {
+  position: relative;
+
+  &:after {
+    content:          '';
+    position:         absolute;
+    bottom:           0;
+    left:             0;
+    right:            0;
+    border-bottom:    1px solid;
+    transition:       transform .2s ease-in-out;
+    transform-origin: left center;
+  }
+
+  &:active,
+  &.active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      transform: scale3d(0, 1, 1);
+    }
+  }
+}
+
+.btn-link {
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:after {
+    bottom:           @padding-base-vertical;
+    left:             @padding-base-horizontal;
+    right:            @padding-base-horizontal;
+  }
+}
+
+.btn-secondary {
+  &:extend(.btn-link all);
+}
+
+.nav {
+  > li > a {
+    z-index: 1;
+
+    &:before {
+      content:          '';
+      position:         absolute;
+      top:              0;
+      bottom:           0;
+      left:             0;
+      right:            0;
+      background-color: fade(@btn-default-border, 15%);
+      transition:       transform .2s ease-in-out;
+      transition-delay: .1s;
+      transform:        scale3d(0, 1, 1);
+      transform-origin: right center;
+      z-index:          -1;
+    }
+
+    &:after {
+      bottom:       0;
+      left:         0;
+      right:        0;
+      border-color: fade(@btn-default-border, 15%);
+    }
+
+    &:hover,
+    &:active {
+      background: none;
+
+      &:before {
+        transform: none;
+      }
+    }
+  }
+
+  > li:last-child > a:after {
+    border-bottom: 0;
+  }
+}
+
+.nav > li.active > a {
+  &:extend(.nav > li > a:hover all);
+}

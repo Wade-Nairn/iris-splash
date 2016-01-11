@@ -5,3 +5,6 @@ Run `npm install` to install dependencies, and use `gulp --dev` to run a localho
 
 ## Production
 Run `gulp build` before upload
+
+## TODO
+* css, img and js should be in the .gitignore, but this is only if the above dev-prod pipeline will always be the way to go

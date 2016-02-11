@@ -1,0 +1,21 @@
+header{
+	background: $main-color;
+	// height: 18%;
+	width: 100%;
+}
+header h3{
+	margin: 0;
+}
+.header-image__big{
+	margin: 1em; 
+}
+.header-heading{
+	color: $text-white;
+	margin: 1.5em 0 0 0;
+}
+
+.mdl-layout__tab-bar{
+	width: 100%;
+	height: inherit;
+	padding: 0;
+}

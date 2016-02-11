@@ -1,0 +1,31 @@
+
+footer h1{
+	font-size: 18px;
+}
+footer li{
+	list-style: none;
+}
+footer ul{
+	padding: 0;
+}
+footer a{ 
+	color: $footer-text;
+	text-decoration: none;
+}
+
+.mdl-mega-footer{
+	list-style: none;
+	color: $footer-text;
+	background: $footer-color;
+	// border-top: 2px solid $main-color;
+}
+.footer__contact-section{
+	text-align: center;
+}
+.footer__contact-list ul{
+	padding: 0;
+}
+
+.footer__contact-list li{
+	padding: 1em 2em;
+}

@@ -1,0 +1,21 @@
+// variables.scss
+
+// uncomment for availability calender
+.z-1{
+	z-index: 10;
+}
+
+// uncommet for shift planner
+// .z-2{
+// 	z-index: 10;
+// }
+
+// uncomment for resource planning
+// .z-3{
+// 	z-index: 10;
+// }
+
+.overlay{
+	background: rgba(0,0,0,0.15);
+	color: rgba(0,0,0,0.5);
+}

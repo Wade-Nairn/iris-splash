@@ -6,7 +6,7 @@ header h3{
 	margin: 0;
 }
 .header-image__big{
-	margin: 1em; 
+	margin:  0 1em; 
 }
 .header-heading{
 	color: $text-white;
@@ -15,6 +15,6 @@ header h3{
 
 .mdl-layout__tab-bar{
 	width: 100%;
-	height: inherit;
+	height: 4em;
 	padding: 0;
 }

@@ -1,3 +1,7 @@
+html,
+body {
+  min-height: 100vh; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -68,19 +72,32 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
 
 .mdl-tabs__panel {
   padding: 1.5em 0 0 0; }
 
 .flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex; }
 
 .flex-row {
-  flex-direction: row; }
+  flex-direction: row;
+  -webkit-box-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row; }
 
 .flex-column {
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column; }
 
 .flex-j--start {
   justify-content: flex-start; }
@@ -92,7 +109,9 @@ a {
   justify-content: center; }
 
 .flex-j--between {
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between; }
 
 .flex-j--around {
   justify-content: space-around; }
@@ -155,7 +174,7 @@ header h3 {
   margin: 0; }
 
 .header-image__big {
-  margin: 1em; }
+  margin: 0 1em; }
 
 .header-heading {
   color: #fff;
@@ -163,7 +182,7 @@ header h3 {
 
 .mdl-layout__tab-bar {
   width: 100%;
-  height: inherit;
+  height: 4em;
   padding: 0; }
 
 footer h1 {

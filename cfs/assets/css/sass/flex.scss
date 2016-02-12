@@ -1,11 +1,33 @@
-.flex          { display: flex; }
-.flex-row      { flex-direction: row; }
-.flex-column   { flex-direction: column; }
+.flex          { 
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex; 
+}
+.flex-row      { 
+	flex-direction: row;
+	-webkit-box-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	
+}
+
+.flex-column   { 
+	flex-direction: column; 
+	-webkit-box-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+}
 
 .flex-j--start    { justify-content: flex-start; }
 .flex-j--end      { justify-content: flex-end; }
 .flex-j--center   { justify-content: center; }
-.flex-j--between  { justify-content: space-between; } 
+.flex-j--between  { 
+	justify-content: space-between; 
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+
+} 
 .flex-j--around   { justify-content: space-around;}
 
 .flex-a--start     { align-items: flex-start; }

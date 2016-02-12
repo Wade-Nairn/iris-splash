@@ -5,15 +5,17 @@
 	<title>SA:CFS - IRIS</title>
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.red-deep_orange.min.css" />
 	<link rel="stylesheet" href="assets/css/sass/style.css">
+	<meta name="viewport" content="initial-scale=1">
+
 </head>
 
 <body>
-	<div class="mdl-layout--fixed-header mdl-tabs mdl-js-tabs mdl-js--fixed-tabs">
+	<div class="mdl-tabs mdl-js-tabs mdl-js--fixed-tabs">
 <!-- Header section		 -->
 		<header class="mdl-layout-header">
 			<div class="mdl-header-row mdl-grid">
-				<div class="mdl-cell mdl-cell--3-col">
-					<a href="index.html"><img src="assets/cfs_header_logo.png" height="140" width="216" alt="" class="header-image__big"></a>
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet flex--centering">
+					<a href="index.html"><img src="assets/cfs_header_logo.png" height="80"  alt="" class="header-image__big"></a>
 				</div>
 				<div class="mdl-cell mdl-cell--9-col header-heading">
 					<h3>South Australia Country Fire Service</h3>
@@ -33,17 +35,18 @@
     	</header>
      
         
-        <div class="inner-container" id="tabs-top">
+        <div class="inner-container">
   		
-  			<div class="mdl-grid">
+  			<div class="mdl-grid" id="tabs-top">
 <!-- First Tab "Install"  		 -->
-			  <div class="mdl-tabs__panel is-active dl-cell mdl-cell--8-col mdl-cell--2-offset" id="install">			
+			  <div class="mdl-tabs__panel is-active mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop" id="install">			
 					<h4>Install</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
 					
-					<div class="btn-container flex flex-j--center flex-a--center">	
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde obcaecati deleniti molestias cupiditate maxime omnis recusandae, ab dolor aspernatur debitis doloremque et vel commodi, inventore explicabo, deserunt natus, doloribus quos!</p>
+					<p>Labore unde, cumque sapiente eius reprehenderit in laudantium consequuntur impedit sint laborum maiores officiis, asperiores autem vel, libero. Aspernatur, nostrum ducimus illo vel ullam omnis voluptatibus consequatur eveniet fuga a?</p>
+					
+					<div class="btn-container flex--centering">	
 						<a href="#"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised ">
 							Download
 						</button></a>
@@ -51,7 +54,7 @@
 
 			  </div>
 <!-- Second Tab "Business Practices" -->
-			  <div class="mdl-tabs__panel dl-cell mdl-cell--8-col mdl-cell--2-offset" id="businessPractices">
+			  <div class="mdl-tabs__panel dl-cell mdl-cell--8-col mdl-cell--2-offset-desktop" id="businessPractices">
 			   		<h4>Business Practices</h4>
 			   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
 					<ul class="mdl-list">
@@ -83,7 +86,7 @@
 					</ul>		
 			  </div>
 <!-- Third tab "Training Manuals"		   -->
-			  <div class="mdl-tabs__panel dl-cell mdl-cell--8-col mdl-cell--2-offset" id="trainingManuals">
+			  <div class="mdl-tabs__panel dl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--12-col-phone" id="trainingManuals">
 			   		<h4>Training Manuals</h4>
 			   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
 			   		<ul>
@@ -102,9 +105,17 @@
 						<li>List Items</li>
 						<li>List Items</li>
 					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
+					<ul>
+						<li>List Items</li>
+						<li>List Items</li>
+						<li>List Items</li>
+						<li>List Items</li>
+						<li>List Items</li>
+					</ul>
 			  </div>
 <!-- Fourth Tab "Help Videos"		   -->
-			  <div class="mdl-tabs__panel dl-cell mdl-cell--8-col mdl-cell--2-offset" id="helpVideos">
+			  <div class="mdl-tabs__panel dl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--12-col-phone" id="helpVideos">
 			   		<h4>Help Videos</h4>
 			   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ab inventore vero, nulla, officia non nostrum unde possimus quia quidem nesciunt minus illo itaque animi iusto illum placeat. Veritatis, nam!</p>
 					<ul>
@@ -130,29 +141,15 @@
 	
 	</div>
 <!-- Footer section -->
-	<footer class="mdl-mega-footer flex flex-row flex-j--around">
-	  
-	    <div class="footer__link-section">
-	      <h1 class="footer__heading">IRIS: coordination</h1>
-	      <ul class="footer__link-list flex flex-column">
-	        <li><a href="#install"        	>Install</a></li>
-	        <li><a href="#businessPractices">Business Pratices</a></li>
-	        <li><a href="#trainingManuals"	>Training Manuals</a></li>
-	        <li><a href="#helpVideos"		>Help Videos</a></li>
-	      </ul>
-	    </div>	
-
-		<div class="footer__contact-section">
-	      <h1 class="footer__heading">Contact</h1>
-	      <ul class="footer__contact-list flex flex-row flex-j--center flex-a--center">
-	        <li>Lorem Name <br> 12345678</li>
-	        <li>Lorem Name <br> 12345678</li>
-	        <li>Lorem Name <br> 12345678</li>
-	      </ul>
-
-	    </div>
-
-	</footer>	
+	<footer class="mdl-mini-footer">
+	  <div class="mdl-mini-footer__right-section">
+	    <div class="mdl-logo">Contact</div>
+	    <ul class="mdl-mini-footer__link-list">
+	      <li>Name First: 0123456</li>
+	      <li>Name Second: 09876543</li>
+	    </ul>
+	  </div>
+	</footer>
 
       <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

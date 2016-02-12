@@ -6,15 +6,16 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.red-deep_orange.min.css">
 	<link rel="stylesheet" href="assets/css/sass/style.css">
+	<meta name="viewport" content="initial-scale=1">
 </head>
 <body>
 
 	<div class="mdl-layout--fixed-header">
 		<header class="mdl-grid">		
-					<div class="mdl-cell mdl-cell--3-col flex flex-j--center flex-a--center">
+					<div class="mdl-cell mdl-cell--3-col flex--centering ">
 						<a href="index.html"><img src="assets/cfs_header_logo.png" height="140" width="216" alt="" class="header-image__big"></a>
 					</div>
-					<div class="mdl-cell mdl-cell--9-col header-heading">
+					<div class="mdl-cell mdl-cell--9-col flex flex-column flex-j--center header-heading">
 						<h3>South Australia Country Fire Service</h3>
 						<h3>IRIS: Coordination</h3>
 					</div>			
@@ -23,7 +24,7 @@
 
 	<div class="container">
 		<div class="mdl-grid">
-			<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset">
+			<div class="flex flex-column flex--centering">
 				<div class="mdl-layout__content">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet nobis neque placeat, at laudantium dignissimos nostrum, sed quisquam temporibus voluptatibus, voluptatem cum eos. Dolores ipsum reiciendis tempore excepturi omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima sequi sapiente eius, odit architecto laudantium eos provident quos eveniet autem omnis optio animi tenetur nihil cumque libero, officia. Nihil.</p>
 				</div>
@@ -34,7 +35,7 @@
 				</div>
 			<!-- </div> -->
 
-				<div class="flex--centering flex-column mdl-layout__content">
+				<div class=" flex--centering flex-column mdl-layout__content">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, minus? Asperiores nihil in culpa nam id repudiandae porro provident obcaecati fugit error fugiat laudantium, impedit vero, eveniet sint maxime alias.</p>
 					<ul><a href="cfs-info.html#businessPractices" class="" >
 						<button class="mdl-button mdl-button--rasied mdl-button-colored  mdl-shadow--4dp">Business Practices</button>	
@@ -51,31 +52,15 @@
 	</div>		
 
 	
-
-
-<footer class="mdl-mega-footer flex flex-row flex-j--around">
-  
-    <div class="footer__link-section">
-      <h1 class="footer__heading">IRIS: coordination</h1>
-      <ul class="footer__link-list flex flex-column">
-        <li><a href="cfs-info.html#install" class="link-click">Install</a></li>
-        <li><a href="cfs-info.html#businessPractices" class="link-click">Business Practices</a></li>
-        <li><a href="cfs-info.html#trainingManuals" class="link-click">Training Manuals</a></li>
-        <li><a href="cfs-info.html#helpVideos" class="link-click">Help Videos</a></li>
-      </ul>
-    </div>	
-
-	<div class="footer__contact-section">
-      <h1 class="footer__heading">Contact</h1>
-      <ul class="footer__contact-list flex flex-row flex-j--center flex-a--center">
-        <li>Lorem Name<br> 12345678</li>
-        <li>Lorem Name<br> 12345678</li>
-        <li>Lorem Name<br> 12345678</li>
-      </ul>
-
-    </div>
-
-</footer>	
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__right-section">
+    <div class="mdl-logo">Contact</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li>Name First: 0123456</li>
+      <li>Name Second: 09876543</li>
+    </ul>
+  </div>
+</footer>
 
       <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

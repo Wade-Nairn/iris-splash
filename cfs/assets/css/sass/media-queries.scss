@@ -1,0 +1,12 @@
+
+.header-heading{
+	@media screen and(max-width: $small)  {
+		text-align:center;	
+	}
+}
+
+.mdl-tabs__tab{
+	@media screen and (max-width: $small) {
+		padding: 0;
+	}
+}

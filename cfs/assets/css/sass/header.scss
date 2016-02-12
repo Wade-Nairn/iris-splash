@@ -1,6 +1,5 @@
 header{
 	background: $main-color;
-	// height: 18%;
 	width: 100%;
 }
 header h3{
@@ -11,7 +10,7 @@ header h3{
 }
 .header-heading{
 	color: $text-white;
-	margin: 1.5em 0 0 0;
+	margin: 0 0 0 1em;
 }
 
 .mdl-layout__tab-bar{

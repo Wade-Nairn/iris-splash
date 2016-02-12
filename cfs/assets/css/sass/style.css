@@ -70,6 +70,9 @@ a {
   left: 0;
   width: 100%; }
 
+.mdl-tabs__panel {
+  padding: 1.5em 0 0 0; }
+
 .flex {
   display: flex; }
 
@@ -156,7 +159,7 @@ header h3 {
 
 .header-heading {
   color: #fff;
-  margin: 1.5em 0 0 0; }
+  margin: 0 0 0 1em; }
 
 .mdl-layout__tab-bar {
   width: 100%;
@@ -189,5 +192,13 @@ footer a {
 
 .footer__contact-list li {
   padding: 1em 2em; }
+
+@media screen and (max-width: 400px) {
+  .header-heading {
+    text-align: center; } }
+
+@media screen and (max-width: 400px) {
+  .mdl-tabs__tab {
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

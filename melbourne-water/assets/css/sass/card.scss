@@ -1,5 +1,11 @@
+// styles for the main content cards 
+
 .mdl-card{
 	width: 100%;
 	margin-top: 1em;
 	margin-bottom: 2em;
+	padding: 0 1em;
+}
+.mdl-card__supporting-text{
+	color: $text-color;
 }	

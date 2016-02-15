@@ -1,0 +1,38 @@
+header{
+	padding: 0;
+}
+header a{
+	color: white;
+	text-decoration: none;
+}
+.mdl-layout__header{
+	background: $main-color;
+}
+
+.header-image__big{
+	margin: 5px;
+}
+.mdl-layout__tab-bar{
+	background: white;
+	padding: 0;
+}
+.mdl-layout__tab-bar a {
+	margin: 0 1em 0.1em 1em;
+	min-width: 70px;
+	color: $text-color-light;
+}
+.mdl-layout__tab-bar-container{
+	height: 3.5em;
+}
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active{
+	color: $text-color-dark;
+}
+.mdl-layout--fixed-tabs .mdl-layout__tab{
+	flex-grow:0;
+}
+.mdl-layout__tab .mdl-layout__tab-ripple-container{
+	margin-bottom: 3px;
+}
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after{
+	background: $secondary-color;
+}

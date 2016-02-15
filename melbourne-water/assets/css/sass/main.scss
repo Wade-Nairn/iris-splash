@@ -7,7 +7,35 @@ body{
 li{
 	list-style-type: none;
 }
-
+h2{
+	margin:  0 0 0.2em 0 ;
+}
+h3{
+	margin:0 0 0 1em;
+	letter-spacing: 2px;
+}
+.mdl-grid{
+	padding:0;
+}
+main .mdl-grid{
+	padding:2em;
+}
 .button__container{
 	margin: 2em;
+}
+
+.mdl-button{
+	background: $main-color;
+	padding: 1.5em 3em;
+	margin: 0.5em;
+	height: inherit;
+	color: white;
+	letter-spacing: 2px;
+	min-width: 215px;
+}
+.mdl-button:hover{
+	background: $secondary-color;
+}
+.mdl-layout__tab-bar a{
+	color: white;
 }

@@ -1,0 +1,35 @@
+// styles for different screen styles
+
+.hide-phone{
+	@media screen and (max-width: $small) {
+		display: none;
+	}
+}
+
+.flex-j--end{
+	@media screen and  (max-width: $small){
+		justify-content: start;
+	}
+}
+h2{
+	@media screen and  (max-width: $small){
+		font-size: 34px;
+		margin: 5px;
+		line-height: 40px;
+	}
+}
+main{
+	@media screen and (max-width: $small) {
+		width:100%;
+	}
+}
+main .mdl-grid{
+	@media screen and (max-width: $medium) {
+		width:80%;
+	}
+}
+p{
+	@media screen and (max-width: $medium ){
+		font-size: 1.2em;
+	}
+}

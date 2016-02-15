@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Melbourne Water - Availiblity</title>
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.blue-light_blue.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="assets/css/sass/style.css">
 
 	<meta name="viewport" content="initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico">
 </head>
 <body class="mdl-color--grey-100 flex flex-column">
 
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs flex-">
-	  	<header class="mdl-layout__header">
-		    <div class="mdl-layout__header-row">
-		      <a href="index.html"><img src="assets/logo.gif" height="51" width="217" alt=""></a>
-		      <h4>Melbourne Water</h4>
-		      <h4>IRIS: avalibility</h4>
-		    </div>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs" id="top">
+	  	<header class="mdl-layout__header mdl-grid">
+	  		<!-- <div class="mdl-grid"> -->
+			    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone  flex flex-row flex-j--end ">
+					<a href="index.html"><img src="assets/MW-logo.jpg" height="80" width="80" alt="" class="header-image__big"></a>
+				</div>
+				<div class="mdl-cell header-heading">
+					<a href="index.html">
+						<h3>Melbourne Water</h3>
+						<h3>Availability</h3>
+					</a>
+				</div>
+			<!-- </div> -->
 	    	<!-- Tabs -->
-		    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-		      <a href="#fixed-tab-1" class="mdl-layout__tab">Training Materials</a>
-		      <a href="#fixed-tab-2" class="mdl-layout__tab">Policy Documents</a>
+		    <div class="mdl-layout__tab-bar mdl-js-ripple-effect flex flex-row flex-j--center" id="tab-bar">
+		      <a href="#" class="mdl-layout__tab">Launch</a>
+		      <a href="#fixed-tab-1" class="mdl-layout__tab">Training <span class="hide-phone">Materials</span></a>
+		      <a href="#fixed-tab-2" class="mdl-layout__tab">Policy <span class="hide-phone">Documents</span></a>
 		      <a href="#fixed-tab-3" class="mdl-layout__tab">F.A.Q</a>
 		      <!-- <a href="#fixed-tab-4" class="mdl-layout__tab">Tab 4</a> -->
 		    </div>
@@ -30,10 +38,10 @@
 	  	<div class="mdl-layout__content">
 		    
 		    <div class="mdl-layout__tab-panel mdl-grid" id="fixed-tab-1">
-		      <section class="page-content mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+		      <section class="page-content mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
 		      	<div class="mdl-card mdl-shadow--4dp">
 				  <div class="mdl-card__supporting-text">
-					  <h2>Training Materials</h2>
+					  <h4>Training Materials</h4>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo itaque reiciendis maxime iste et veritatis ipsa eveniet amet obcaecati neque. Quis, minus error nulla recusandae dicta aliquid voluptatibus sit temporibus.</p>
 					  <p>Cumque odio error, nesciunt eum temporibus qui reiciendis assumenda vitae voluptates voluptas quasi et, veniam. Ab quaerat, fuga alias architecto quis veniam, eius, deserunt accusantium laborum commodi, quisquam nobis dolores.</p>
 					  <ul>
@@ -59,10 +67,10 @@
 		    </div>
 		    
 		    <div class="mdl-layout__tab-panel mdl-grid" id="fixed-tab-2">
-		      <section class="page-content mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+		      <section class="page-content mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
 		      	<div class="mdl-card mdl-shadow--4dp">
 				  <div class="mdl-card__supporting-text">
-					  <h2>Policy Documents</h2>
+					  <h4>Policy Documents</h4>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo itaque reiciendis maxime iste et veritatis ipsa eveniet amet obcaecati neque. Quis, minus error nulla recusandae dicta aliquid voluptatibus sit temporibus.</p>
 					  <p>Cumque odio error, nesciunt eum temporibus qui reiciendis assumenda vitae voluptates voluptas quasi et, veniam. Ab quaerat, fuga alias architecto quis veniam, eius, deserunt accusantium laborum commodi, quisquam nobis dolores.</p>
 					  <ul>
@@ -88,10 +96,10 @@
 		    </div>
 		    
 		    <div class="mdl-layout__tab-panel mdl-grid" id="fixed-tab-3">
-		      <section class="page-content mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+		      <section class="page-content mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
 		        <div class="mdl-card mdl-shadow--4dp">
 				  <div class="mdl-card__supporting-text">
-					  <h2>F.A.Q</h2>
+					  <h4>F.A.Q</h4>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo itaque reiciendis maxime iste et veritatis ipsa eveniet amet obcaecati neque. Quis, minus error nulla recusandae dicta aliquid voluptatibus sit temporibus.</p>
 					  <p>Cumque odio error, nesciunt eum temporibus qui reiciendis assumenda vitae voluptates voluptas quasi et, veniam. Ab quaerat, fuga alias architecto quis veniam, eius, deserunt accusantium laborum commodi, quisquam nobis dolores.</p>
 					  <ul>

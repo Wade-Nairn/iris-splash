@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(this).scrollTop(0);
+    $(this).scrollTop(1);
   // Make the tab bar stick to the top of the page when it hits it.
 
   $(function(){

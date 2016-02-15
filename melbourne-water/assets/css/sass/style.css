@@ -67,11 +67,26 @@
 .flex-9 {
   flex: 9; }
 
+.flex--centering {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+html,
+body {
+  height: 100vh; }
+
 li {
   list-style-type: none; }
 
+.button__container {
+  margin: 2em; }
+
+.mdl-mini-footer {
+  padding: 16px; }
+
 .mdl-card {
-  width: 80%;
+  width: 100%;
   margin-top: 1em;
   margin-bottom: 2em; }
 

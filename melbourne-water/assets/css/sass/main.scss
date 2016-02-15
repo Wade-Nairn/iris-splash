@@ -1,6 +1,13 @@
 // Overall styles for the entire project
+html,
+body{
+	height: 100vh;
+}
 
 li{
 	list-style-type: none;
+}
 
+.button__container{
+	margin: 2em;
 }
